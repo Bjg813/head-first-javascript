@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Document</title>
+<script>
+function init() {
+    var planet = document.getElementById("greenplanet");
+    planet.innerHTML = "Red Alert: hit by phaser fire!";
+    planet.setAttribute("class", "redtext");
+
+    var scoop = document.getElementById("redplanet");
+    var altText = scoop.getAttribute("alt");
+    if (altText == null) {
+        console.log("Oh, I guess there isn't an alt attribute");
+    } else {
+        console.log("I can't see the image in the console, but I am told it looks like " + altText);
+    }
+}
+
+window.onload = init;
+</script>
+
+</head>
+<body>
+    <p id="greenplanet">All is well</p>
+    <p id="redplanet" alt="test">Nothing to report</p>
+    <p id="blueplanet">All systems A-OK</p>
+</body>
+</html>

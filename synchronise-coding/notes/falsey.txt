@@ -1,0 +1,7 @@
+Five falsey values:
+
+1. Undefined
+2. null
+3. 0
+4. empty string ""
+5. NaN
